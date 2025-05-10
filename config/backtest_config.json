@@ -1,0 +1,42 @@
+{
+    "exchange": {
+        "name": "binance",
+        "api_key": "",
+        "api_secret": ""
+    },
+    "trading_pairs": [
+        "BTC/USDT",
+        "ETH/USDT",
+        "SOL/USDT",
+        "LINK/BTC"
+    ],
+    "start_date": "2023-01-01",
+    "end_date": "2023-12-31",
+    "data_dir": "data/historical",
+    "strategy_params": {
+        "name": "scalping",
+        "rsi_period": 14,
+        "bb_period": 20,
+        "bb_std": 2.0,
+        "macd_fast": 12,
+        "macd_slow": 26,
+        "macd_signal": 9,
+        "volume_period": 20
+    },
+    "risk_management": {
+        "initial_capital": 10000,
+        "max_position_size_pct": 0.02,
+        "max_total_exposure": 0.7,
+        "default_stop_loss_pct": 0.015,
+        "default_take_profit1_pct": 0.005,
+        "default_take_profit2_pct": 0.01,
+        "trailing_stop_pct": 0.003,
+        "max_consecutive_losses": 3,
+        "max_drawdown_pct": 0.1
+    },
+    "timeframes": {
+        "primary": "5m",
+        "secondary": "1h",
+        "tertiary": "15m"
+    }
+}

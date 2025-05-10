@@ -1,0 +1,48 @@
+{
+    "exchange": {
+        "name": "mock",
+        "api_key": "",
+        "api_secret": "",
+        "data_dir": "data/historical",
+        "initial_balance": {
+            "USDT": 10000.0,
+            "BTC": 0.1,
+            "ETH": 1.0,
+            "SOL": 10.0,
+            "LINK": 50.0
+        }
+    },
+    "trading_pairs": [
+        "BTC/USDT",
+        "ETH/USDT",
+        "SOL/USDT",
+        "LINK/BTC"
+    ],
+    "mode": "paper_trading",
+    "strategy": {
+        "name": "scalping",
+        "rsi_period": 14,
+        "bb_period": 20,
+        "bb_std": 2.0,
+        "macd_fast": 12,
+        "macd_slow": 26,
+        "macd_signal": 9,
+        "volume_period": 20
+    },
+    "risk_management": {
+        "max_position_size_pct": 0.02,
+        "max_total_exposure": 0.7,
+        "max_consecutive_losses": 3,
+        "max_drawdown_pct": 0.1,
+        "default_stop_loss_pct": 0.015,
+        "default_take_profit1_pct": 0.005,
+        "default_take_profit2_pct": 0.01,
+        "trailing_stop_pct": 0.003
+    },
+    "timeframes": {
+        "primary": "5m",
+        "secondary": "1h",
+        "tertiary": "15m"
+    },
+    "use_mock_exchange": true
+}
